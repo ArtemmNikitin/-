@@ -1,0 +1,200 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+body{
+height:100%;
+line-height: 1;
+font-family: 'PT Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: black;
+}
+
+.wrapper{
+	position: relative;
+}
+
+.wrapper-container{
+	max-width: 1440px;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.container {
+max-width: 1240px;
+margin: 0 auto;
+}
+.main-screen {
+	max-height: 787px;
+	width: 560px;
+	margin-left: 100px;
+	margin-right: 10px;
+}
+
+.main-content {
+	position: relative;
+}
+
+.main-content__wrapper{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5px;
+}
+
+.main-content__block{
+	flex: 1 0 auto;
+	position: relative;
+	width: 540px;
+	height: 100%;
+	z-index: 3;
+}
+
+.main-title {
+	margin-top: 190px;
+}
+.title {
+color:#363738;
+font-size: 52px;
+line-height: 125%;
+font-family: 'Exo 2', sans-serif;
+}
+.subtitle{
+line-height: 150%;
+color: #6B6B6C;
+}
+.main-title__subtitle {
+	margin-top: 40px;
+}
+
+.title-link{
+	margin-top: 40px;
+color: #363738;
+}
+
+.main-link{
+font-weight: 700;
+color: inherit;
+}
+
+.main-link:hover{
+border-bottom: 3px solid #FFCE50;
+}
+
+.main-green-block {
+	width: 599px;
+	height: 787px;
+	background-color: #0B7572;
+	z-index: 1;
+}
+
+.main-img-wrapper{
+	position: absolute;
+	right: 100px;
+	top: 0;
+	z-index: 1;
+}
+
+
+.main-img{
+	/* flex: 1 1 auto; */
+	position: relative;
+	width: 635px;
+	height: 505px;
+	z-index: 3;
+	margin-top: 109px;
+	border-radius:18px;
+}
+
+.main-img img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: left;
+	max-width: 100%;
+	height: 100%;
+	border-radius:20px;
+}
+
+
+@media (max-width:1400px) {
+	.main-img img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		object-position: left;
+		max-width: 100%;
+		height: 100%;
+		border-radius:20px;
+		display: none;
+	}
+}
+
+@media (max-width:1400px) {
+	.main-img{
+		/* flex: 1 1 auto; */
+		position: relative;
+		width: 690px;
+		height: 314px;
+		z-index: 3;
+		margin-top: 109px;
+		border-radius:18px;
+		background-color:#FFCE50;
+		background-image: url('/img/main-pictute-lorries.jpg');
+	}
+}
+
+@media (max-width:1400px) {
+	.main-img-wrapper{
+		position: absolute;
+		left: 100px;
+		top: 429px;
+	}
+}
+@media (max-width:1024px) {
+	.main-img-wrapper{
+		position: absolute;
+		left: 60px;
+		top: 429px;
+	}
+}
+@media (max-width:768px) {
+	.main-img-wrapper{
+		position: absolute;
+		left: 40px;
+		top: 429px;
+	}
+}
+
+
+@media (max-width:1024px) {
+	.main-screen {
+		margin-left: 60px;
+	}
+}
+
+@media (max-width:768px) {
+	.main-screen {
+		margin-left: 40px;
+	}
+}
